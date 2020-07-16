@@ -9,7 +9,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA2" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
 
     <application
@@ -51,10 +52,6 @@
                 <category android:name="android.intent.category.HOME" />
             </intent-filter>
         </activity>
-
-        <uses-library
-            android:name="org.apache.http.legacy"
-            android:required="false" /> <!-- SmiSdk Intent Service required for all APIs -->
     </application>
 
 </manifest>
